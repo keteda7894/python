@@ -3,4 +3,7 @@ services:
   hello-world:
     labels:
       dev.okteto.com/private: "true"
-    image: alpine:latest
+    image: okteto/node:14
+    command: bash
+    sync:
+      - frontend:/usr/src/app
