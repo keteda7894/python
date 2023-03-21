@@ -3,4 +3,4 @@ services:
   hello-world:
     labels:
       dev.okteto.com/private: "true"
-    image: nginx:alpine
+    image: ubuntu-latest
