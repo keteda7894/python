@@ -3,6 +3,6 @@ services:
   hello-world:
     labels:
       dev.okteto.com/private: "true"
-    image: alpine:3
+    image: nginx:alpine
     ports:
       - 8080:80
