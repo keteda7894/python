@@ -1,9 +1,7 @@
-name: hello-world
+version: '3'
+
 services:
-  hello-world:
-    labels:
-      dev.okteto.com/private: "true"
-    image: okteto/node:14
-    command: bash
-    sync:
-      - frontend:/usr/src/app
+  nginx:
+    image: nginx
+    command: /bin/bash
+    tty: true
