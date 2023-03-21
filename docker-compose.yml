@@ -4,5 +4,3 @@ services:
     labels:
       dev.okteto.com/private: "true"
     image: nginx:alpine
-    ports:
-      - 8080:80
