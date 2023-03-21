@@ -8,3 +8,6 @@ forward:
 - 8080:8080
 reverse:
 - 9000:9000
+metadata:
+  annotations:
+    dev.okteto.com/private: "true"
