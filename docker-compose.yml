@@ -3,4 +3,4 @@ services:
   hello-world:
     labels:
       dev.okteto.com/private: "true"
-    image: ubuntu-latest
+    image: okteto/ubuntu
