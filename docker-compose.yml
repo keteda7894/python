@@ -1,17 +1,8 @@
-version: "3"
-
+name: hello-world
 services:
-  app:
-    image: python:3
-    build:
-      context: .
-      args:
-        VERSION: 3
-    working_dir: /usr/src/app
-    command: ["bash"]
-    volumes:
-      - ./bashrc:/root/.bashrc
-    apt:
-      packages:
-        - zip
-        - git
+  hello-world:
+    labels:
+      dev.okteto.com/private: "true"
+    image: alpine:3
+    ports:
+      - 8080:80
